@@ -152,6 +152,8 @@ body {
     -moz-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
     -o-transform: translateY(-100%);
+    top:0;
+    z-index:99;
 }
 
 .modal-wrapper {
