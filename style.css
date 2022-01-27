@@ -1,0 +1,344 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
+
+
+/* This is the Buttons Section */
+
+.modal-btn-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.modal-btn-wrapper {
+    width: 100%;
+    max-width: 500px;
+}
+
+.modal-one-btn,
+.modal-two-btn,
+.modal-three-btn,
+.modal-four-btn {
+    width: 100%;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.modal-one-btn {
+    width: 50%;
+    max-width: 200px;
+    display: block;
+    background-color: rgb(0, 119, 255);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto 20px auto;
+}
+
+.modal-one-btn:hover {
+    background-color: rgb(2, 93, 198);
+}
+
+.modal-two-btn {
+    width: 50%;
+    max-width: 200px;
+    display: block;
+    background-color: red;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto 20px auto;
+}
+
+.modal-two-btn:hover {
+    background-color: rgb(196, 3, 3);
+}
+
+.modal-three-btn {
+    width: 50%;
+    max-width: 200px;
+    display: block;
+    background-color: green;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto 20px auto;
+}
+
+.modal-three-btn:hover {
+    background-color: rgb(1, 97, 1);
+}
+
+.modal-four-btn {
+    width: 50%;
+    max-width: 200px;
+    display: block;
+    background-color: rgb(210, 91, 0);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto 20px auto;
+}
+
+.modal-four-btn:hover {
+    background-color: rgb(177, 77, 0);
+}
+
+
+/* This is the Modal Containers Section */
+
+.modal-container-one,
+.modal-container-two,
+.modal-container-three,
+.modal-container-four {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.61);
+    opacity: 0;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+}
+
+.modal-wrapper {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.modal-exit-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.modal-exit-btn-one,
+.modal-exit-btn-two,
+.modal-exit-btn-three,
+.modal-exit-btn-four {
+    color: red;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2rem;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.modal-exit-btn-one:hover,
+.modal-exit-btn-two:hover,
+.modal-exit-btn-three:hover,
+.modal-exit-btn-four:hover {
+    color: rgb(172, 1, 1);
+}
+
+.modal-content-one,
+.modal-content-two,
+.modal-content-three,
+.modal-content-four {
+    width: 100%;
+    min-width: 300px;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.411);
+}
+
+.modal-content-one>h1,
+.modal-content-two>h1,
+.modal-content-three>h1,
+.modal-content-four>h1 {
+    text-align: center;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.modal-content-one>p,
+.modal-content-two>p,
+.modal-content-three>p,
+.modal-content-four>p {
+    text-align: center;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.modal-content-two>.phone-numbers {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.modal-content-two>.phone-numbers>li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.modal-content-two>.phone-numbers>li>h2 {
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.modal-content-two>.phone-numbers>li>a {
+    color: #2e2e2e;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: 2px solid grey;
+    padding: 5px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.modal-content-two>.phone-numbers>li>a:hover {
+    background-color: grey;
+    color: #fff;
+}
+
+.modal-content-show {
+    display: block;
+}
+
+
+/* This is to show the Modal content Animation */
+
+.show-modal {
+    animation: showModal .5s ease-in-out normal forwards;
+    -webkit-animation: showModal .5s ease-in-out normal forwards;
+}
+
+@keyframes showModal {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+        background-color: rgba(0, 0, 0, 0);
+    }
+    50% {
+        opacity: .1;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    60% {
+        opacity: .2;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    70% {
+        opacity: .3;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        background-color: rgba(0, 0, 0, 0.8);
+        top: 0;
+    }
+}
+
+
+/* This is to show the Hide content Animation */
+
+.hide-modal {
+    animation: hideModal .5s ease-in-out normal forwards;
+    -webkit-animation: hideModal .5s ease-in-out normal forwards;
+}
+
+@keyframes hideModal {
+    from {
+        opacity: .1;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -o-transform: translateY(-100%);
+    }
+}
