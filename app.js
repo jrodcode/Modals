@@ -7,9 +7,10 @@ $(window).ready(function() {
 
 
 // This is to Open the Modal One
-var modalOneBtn = document.querySelector(".modal-one-btn");
+var modalOneBtn = $(".modal-one-btn");
 
-modalOneBtn.addEventListener("click", function() {
+modalOneBtn.click(function() {
+    document.querySelector(".modal-container-one").classList.remove("hide-modal");
     document.querySelector(".modal-container-one").classList.add("show-modal");
     document.querySelector(".modal-container-one").classList.remove("hide-modal");
 });
@@ -40,9 +41,9 @@ $(".modal-exit-btn-one").click(function() {
 
 
 // This is to open the Modal Two
-var modalTwoBtn = document.querySelector(".modal-two-btn");
+var modalTwoBtn = $(".modal-two-btn");
 
-modalTwoBtn.addEventListener("click", function() {
+modalTwoBtn.click(function() {
     document.querySelector(".modal-container-two").classList.add("show-modal");
     document.querySelector(".modal-container-two").classList.remove("hide-modal");
 });
@@ -76,9 +77,9 @@ $(".modal-exit-btn-two").click(function() {
 
 
 // This is to open the Modal Three
-var modalThreeBtn = document.querySelector(".modal-three-btn");
+var modalThreeBtn = $(".modal-three-btn");
 
-modalThreeBtn.addEventListener("click", function() {
+modalThreeBtn.click(function() {
     document.querySelector(".modal-container-three").classList.add("show-modal");
     document.querySelector(".modal-container-three").classList.remove("hide-modal");
 });
@@ -106,9 +107,9 @@ $(".modal-exit-btn-three").click(function() {
 
 
 // This is to open the Modal Four
-var modalFourBtn = document.querySelector(".modal-four-btn");
+var modalFourBtn = $(".modal-four-btn");
 
-modalFourBtn.addEventListener("click", function() {
+modalFourBtn.click(function() {
     document.querySelector(".modal-container-four").classList.add("show-modal");
     document.querySelector(".modal-container-four").classList.remove("hide-modal");
 });
